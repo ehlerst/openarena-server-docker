@@ -1,5 +1,5 @@
 FROM fedora:latest
-RUN yum install curl unzip -y
+RUN dnf install curl unzip -y
 RUN curl -o /tmp/openarena.zip http://download.tuxfamily.org/openarena/rel/088/openarena-0.8.8.zip
 
 RUN mkdir -p /opt/openarena
