@@ -1,0 +1,10 @@
+server:
+  # pick one
+  # build: .
+  image: ehlers320/openarena-server-docker
+
+  ports:
+    - "27960:27960/udp"
+    - "27950:27950/udp"
+  volumes:
+    - ./config:/root/.openarena/baseoa
